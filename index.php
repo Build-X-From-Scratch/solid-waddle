@@ -52,7 +52,7 @@ https://templatemo.com/tm-580-woox-travel
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
+                    <a href="index.php" class="logo">
                         Kecamatan Tinanggea
                     </a>
                     <!-- ***** Logo End ***** -->
@@ -60,8 +60,8 @@ https://templatemo.com/tm-580-woox-travel
                     <ul class="nav">
                         <li><a id="1" href="index.html" class="active">Home</a></li>
                         <li><a id="2" href="about.html">Topografi</a></li>
-                        <li><a id="3" href="deals.html">Batas Wilayah</a></li>
-                        <li><a id="4" href="reservation.html">Pertumbuhan penduduk</a></li>
+                        <li><a id="3" href="about.html">Batas Wilayah</a></li>
+                        <li><a id="4" href="reservation.php">Pertumbuhan penduduk</a></li>
                         <li><a href="reservation.html">Contact</a></li>
                     </ul>   
                     <a class='menu-trigger'>
@@ -369,143 +369,6 @@ https://templatemo.com/tm-580-woox-travel
       </div>
     </div>
   </div>
-<!-- keluarahan tinanggea -->
-  <div class="cities-town">
-    <div class="container">
-      <div class="row">
-        <div class="slider-content">
-          <div class="row">
-            <div class="col-lg-12">
-              <h2>Kelurahan <em>Tinanggea</em></h2>
-            </div>
-            <div class="col-lg-12">
-              <div class="row" style="margin: 0 -15px;">
-                <div class="col-lg-4 col-md-4 col-sm-6" style="padding: 15px;">
-                  <div class="thumb" style="padding: 15px; background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    <img src="assets/images/img/portfolio/01-small.jpg" alt="" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6" style="padding: 15px;">
-                  <div class="thumb" style="padding: 15px; background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    <img src="assets/images/img/portfolio/02-small.jpg" alt="" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6" style="padding: 15px;">
-                  <div class="thumb" style="padding: 15px; background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    <img src="assets/images/img/portfolio/03-small.jpg" alt="" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end -->
-
-  <!-- desa bungin permai -->
-  <div class="cities-town">
-    <div class="container">
-      <div class="row">
-        <div class="slider-content">
-          <div class="row">
-            <div class="col-lg-12">
-              <h2>Kelurahan <em>Tinanggea</em></h2>
-            </div>
-            <div class="col-lg-12">
-              <div class="row" style="margin: 0 -15px;">
-                <div class="col-lg-4 col-md-4 col-sm-6" style="padding: 15px;">
-                  <div class="thumb" style="padding: 15px; background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    <img src="assets/images/img/portfolio/04-small.jpg" alt="" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6" style="padding: 15px;">
-                  <div class="thumb" style="padding: 15px; background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    <img src="assets/images/img/portfolio/05-small.jpg" alt="" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6" style="padding: 15px;">
-                  <div class="thumb" style="padding: 15px; background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    <img src="assets/images/img/portfolio/06-small.jpg" alt="" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end -->
-   <!-- desa torokeku -->
-   <div class="cities-town">
-    <div class="container">
-      <div class="row">
-        <div class="slider-content">
-          <div class="row">
-            <div class="col-lg-12">
-              <h2>Kelurahan <em>Tinanggea</em></h2>
-            </div>
-            <div class="col-lg-12">
-              <div class="row" style="margin: 0 -15px;">
-                <div class="col-lg-4 col-md-4 col-sm-6" style="padding: 15px;">
-                  <div class="thumb" style="padding: 15px; background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    <img src="assets/images/img/portfolio/07-small.jpg" alt="" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6" style="padding: 15px;">
-                  <div class="thumb" style="padding: 15px; background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    <img src="assets/images/img/portfolio/08-small.jpg" alt="" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6" style="padding: 15px;">
-                  <div class="thumb" style="padding: 15px; background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    <img src="assets/images/img/portfolio/09-small.jpg" alt="" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    <!-- end -->
-     <!-- desa akuni -->
-     <div class="cities-town">
-    <div class="container">
-      <div class="row">
-        <div class="slider-content">
-          <div class="row">
-            <div class="col-lg-12">
-              <h2>Kelurahan <em>Tinanggea</em></h2>
-            </div>
-            <div class="col-lg-12">
-              <div class="row" style="margin: 0 -15px;">
-                <div class="col-lg-4 col-md-4 col-sm-6" style="padding: 15px;">
-                  <div class="thumb" style="padding: 15px; background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    <img src="assets/images/img/portfolio/10-small.jpg" alt="" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6" style="padding: 15px;">
-                  <div class="thumb" style="padding: 15px; background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    <img src="assets/images/img/portfolio/11-small.jpg" alt="" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6" style="padding: 15px;">
-                  <div class="thumb" style="padding: 15px; background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    <img src="assets/images/img/portfolio/12-small.jpg" alt="" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-      <!-- end -->
 
   <div class="call-to-action">
   <div class="container">
