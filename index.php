@@ -59,11 +59,11 @@ https://templatemo.com/tm-580-woox-travel
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                         <li><a id="1" href="index.html" class="active">Home</a></li>
-                        <li><a href="about.html">Contact</a></li>
                         <li><a id="2" href="about.php">Topografi</a></li>
                         <li><a id="3" href="about.php">Batas Wilayah</a></li>
                         <li><a id="4" href="reservation.php">Pertumbuhan penduduk</a></li>
                         <li><a href="reservation.html">Contact</a></li>
+                        <li><a href="dashboard/register.php">admin</a></li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -88,7 +88,7 @@ https://templatemo.com/tm-580-woox-travel
           <div class="banner-inner-wrapper header-text">
             <div class="main-caption">
             <h2>Selamat Datang di:</h2>
-            <h1>Kecamatan Tinanggea</h1>
+            <h1 class="judul-kecamatan">Kecamatan Tinanggea</h1>
               <div class="border-button"><a href="about.html">Go There</a></div>
             </div>
             <div class="container">
@@ -110,7 +110,7 @@ https://templatemo.com/tm-580-woox-travel
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <div class="main-button">
-                          <a href="about.html">Pelajari Lebih Lanjut</a>
+                          <a href="about.php">Pelajari Lebih Lanjut</a>
                         </div>
                       </div>
                     </div>
