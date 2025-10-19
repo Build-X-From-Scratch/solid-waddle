@@ -58,7 +58,7 @@ https://templatemo.com/tm-580-woox-travel
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a id="1" href="index.html" class="active">Home</a></li>
+                        <li><a id="1" href="index.php" class="active">Home</a></li>
                         <li><a id="2" href="about.html">Topografi</a></li>
                         <li><a id="3" href="deals.html">Batas Wilayah</a></li>
                         <li><a id="4" href="reservation.html">Pertumbuhan penduduk</a></li>

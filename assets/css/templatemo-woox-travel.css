@@ -1,3 +1,18 @@
+#section-1 .content-slider .slider .banner {
+  position: relative;
+}
+#section-1 .content-slider .slider .banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
+#section-1 .content-slider .slider .banner .banner-inner-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
 /*
 
 TemplateMo 580 Woox Travel
@@ -842,12 +857,18 @@ Banner Style
 #section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {
   font-weight: 500;
   font-size: 20px;
-  color: #fff;
+  background: linear-gradient(90deg, #1E3A8A, #3B82F6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 20px;
 }
 #section-1 .content-slider .slider .banner .banner-inner-wrapper h1 {
   font-size: 50px;
-  color: #fff;
+  background: linear-gradient(90deg, #1E3A8A, #3B82F6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -861,7 +882,7 @@ Banner Style
   background-size: cover;
 }
 #section-1 .content-slider .slider #top-banner-2 {  
-  background: url('../images/img/intro-bg2.jpg') no-repeat center center;
+  background: url('../images/img/team/laut.png') no-repeat center center;
   background-size: cover;
 }
 #section-1 .content-slider .slider #top-banner-3 {
@@ -869,7 +890,7 @@ Banner Style
   background-size: cover;
 }
 #section-1 .content-slider .slider #top-banner-4 {
-  background: url('../images/img/penduduk.jpg') no-repeat center center;
+  background: url('../images/img/DJI_0112.jpg') no-repeat center center;
   background-size: cover;
 }
 #section-1 .content-slider nav {
@@ -2241,15 +2262,23 @@ body {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 767px) { 
   #section-1 .content-slider .slider .banner .banner-inner-wrapper {
     padding-top: 120px;
   }
   #section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {
     font-size: 15px;
+    background: linear-gradient(90deg, #003973, #E5E5BE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
   #section-1 .content-slider .slider .banner .banner-inner-wrapper h1 {
     font-size: 36px;
+    background: linear-gradient(90deg, #003973, #E5E5BE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
   #section-1 .more-info {
     padding: 30px;
@@ -2367,5 +2396,71 @@ body {
   }
   .weekly-offers .container-fluid {
     padding: 0px;
+  }
+}
+
+/* ===== STRATEGI KETERBACaan TINGGI UNTUK JUDUL KECAMATAN ===== */
+.judul-kecamatan {
+  /* 1. TEXT SHADOW MULTI-LAYER untuk Kontras Maksimal */
+  text-shadow: 
+    3px 3px 6px rgba(0, 0, 0, 0.9),      /* Shadow utama */
+    0 0 10px rgba(0, 0, 0, 0.7),         /* Glow hitam */
+    0 0 20px rgba(0, 0, 0, 0.5),         /* Glow lebih luas */
+    0 0 30px rgba(0, 0, 0, 0.3);         /* Glow terluas */
+  
+  /* 2. FALLBACK COLOR untuk Browser yang tidak support gradient */
+  color: #ffffff !important;
+  
+  /* 3. TEXT STROKE untuk Outline Effect */
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.9);
+  text-stroke: 2px rgba(0, 0, 0, 0.9);
+  
+  /* 4. LETTER SPACING untuk Keterbacaan */
+  letter-spacing: 3px;
+  
+  /* 5. LINE HEIGHT untuk Spacing Vertikal */
+  line-height: 1.1;
+  
+  /* 6. FONT WEIGHT yang Lebih Tebal */
+  font-weight: 900;
+  
+  /* 7. FILTER untuk Kontras dan Brightness */
+  filter: contrast(1.3) brightness(1.2) saturate(1.1);
+  
+  /* 8. BACKDROP FILTER untuk Background Blur */
+  backdrop-filter: blur(1px);
+  
+  /* 9. BOX SHADOW untuk Container */
+  box-shadow: 
+    inset 0 0 20px rgba(255, 255, 255, 0.1),
+    0 0 30px rgba(0, 0, 0, 0.3);
+  
+  /* 10. PADDING untuk Breathing Room */
+  padding: 10px 20px;
+  
+  /* 11. BORDER RADIUS untuk Soft Edge */
+  border-radius: 10px;
+  
+  /* 12. TRANSITION untuk Smooth Effect */
+  transition: all 0.3s ease;
+}
+
+/* Responsive untuk Mobile */
+@media (max-width: 767px) {
+  .judul-kecamatan {
+    /* Text Shadow lebih kecil di mobile */
+    text-shadow: 
+      2px 2px 4px rgba(0, 0, 0, 0.8),
+      0 0 8px rgba(0, 0, 0, 0.6);
+    
+    /* Letter spacing lebih kecil */
+    letter-spacing: 2px;
+    
+    /* Text stroke lebih tipis */
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.8);
+    text-stroke: 1px rgba(0, 0, 0, 0.8);
+    
+    /* Padding lebih kecil */
+    padding: 8px 15px;
   }
 }
