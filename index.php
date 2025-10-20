@@ -58,11 +58,11 @@ https://templatemo.com/tm-580-woox-travel
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a id="1" href="index.html" class="active">Home</a></li>
-                        <li><a id="2" href="about.php">Topografi</a></li>
-                        <li><a id="3" href="about.php">Batas Wilayah</a></li>
-                        <li><a id="4" href="reservation.php">Pertumbuhan penduduk</a></li>
-                        <li><a href="reservation.html">Contact</a></li>
+                        <li><a id="1" href="index.php" class="active">Home</a></li>
+                        <li><a id="4" href="page_id.php?id=4">Topografi</a></li>
+                        <li><a id="5" href="page_id.php?id=5">Batas Wilayah</a></li>
+                        <li><a id="6" href="page_id.php?id=6">Pertumbuhan penduduk</a></li>
+                        <li><a href="reservation.php">Contact</a></li>
                         <li><a href="dashboard/register.php">admin</a></li>
                     </ul>   
                     <a class='menu-trigger'>
@@ -89,7 +89,7 @@ https://templatemo.com/tm-580-woox-travel
             <div class="main-caption">
             <h2>Selamat Datang di:</h2>
             <h1 class="judul-kecamatan">Kecamatan Tinanggea</h1>
-              <div class="border-button"><a href="about.html">Go There</a></div>
+              <div class="border-button"><a href="reservation.php">Go There</a></div>
             </div>
             <div class="container">
               <div class="row">
@@ -371,6 +371,117 @@ https://templatemo.com/tm-580-woox-travel
     </div>
   </div>
 
+
+<!-- start -->
+  <div class="cities-town">
+    <div class="container">
+      <div class="row">
+        <div class="slider-content">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2>Kecamatan <em>Tinanggea</em></h2>
+            </div>
+            <div class="col-lg-12">
+              <!-- Hover dummy styles for thumbnails -->
+              <style>
+                .owl-cites-town .item .thumb { position: relative; overflow: hidden; border-radius: 10px; }
+                .owl-cites-town .item .thumb img { display: block; width: 100%; height: auto; }
+                .owl-cites-town .item .thumb .hover-info { position: absolute; inset: 0; background: rgba(0,0,0,0.45); color: #fff; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity .3s ease; text-align: center; padding: 10px; }
+                .owl-cites-town .item .thumb:hover .hover-info { opacity: 1; }
+              </style>
+              <div class="owl-cites-town owl-carousel">
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/img/portfolio/01-small.jpg" alt="">
+                    <div class="hover-info">Pesisir Pantai</div>
+                    <h4>Kelurahan Tinanggea</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/img/portfolio/02-small.jpg" alt="">
+                    <div class="hover-info">Kawasan Kelurahan</div>
+                    <h4>Kelurahan Tinanggea</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/img/portfolio/03-small.jpg" alt="">
+                    <div class="hover-info">Kantor Kelurahan</div>
+                    <h4>Kelurahan Tinanggea</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/img/portfolio/04-small.jpg" alt="">
+                    <div class="hover-info">Kantor Kepala Desa</div>
+                    <h4>Desa Bungin Permai</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/img/portfolio/05-small.jpg" alt="">
+                    <div class="hover-info">Kawasan budidaya rumput laut</div>
+                    <h4>Desa Bungin Permai</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/img/portfolio/06-small.jpg" alt="">
+                    <div class="hover-info">Komuditas unggulan rumput laut</div>
+                    <h4>Desa Bungin Permai</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/img/portfolio/07-small.jpg" alt="">
+                    <div class="hover-info">Sentra industri maritim</div>
+                    <h4>Desa Torokeku Baru</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/img/portfolio/08-small.jpg" alt="">
+                    <div class="hover-info">Areal Desa</div>
+                    <h4>Desa Torokeku Baru</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/img/portfolio/09-small.jpg" alt="">
+                    <div class="hover-info">Kawasan Pengolahan Rumput Laut</div>
+                    <h4>Desa Torokeku Baru</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/img/portfolio/10-small.jpg" alt="">
+                    <div class="hover-info">Potret Kawasan pesisir</div>
+                    <h4>Desa Akuni</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/img/portfolio/11-small.jpg" alt="">
+                    <div class="hover-info">Potret kawasan desa</div>
+                    <h4>Desa Akuni</h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/img/portfolio/12-small.jpg" alt="">
+                    <div class="hover-info">Daerah Pengolahan Rumput Laut</div>
+                    <h4>Desa Akuni</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end -->
   <div class="call-to-action">
   <div class="container">
     <div class="row">

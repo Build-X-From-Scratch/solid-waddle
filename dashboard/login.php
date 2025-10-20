@@ -6,12 +6,15 @@ $error = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = mysqli_real_escape_string($connect, trim($_POST['username']));
-    $password = mysqli_real_escape_string($connect, trim($_POST['password']));
+    $password = trim($_POST['password']);
 
-    // Cek username / email + password langsung (match biasa)
+    // Hash password input pakai MD5 (harus sama seperti di register.php)
+    $hashed_password = md5($password);
+
+    // Ambil data admin berdasarkan username/email + password (langsung cocokkan hash)
     $query = "SELECT * FROM admin WHERE (username = ? OR email = ?) AND password = ? LIMIT 1";
     $stmt = mysqli_prepare($connect, $query);
-    mysqli_stmt_bind_param($stmt, 'sss', $username, $username, $password);
+    mysqli_stmt_bind_param($stmt, 'sss', $username, $username, $hashed_password);
     mysqli_stmt_execute($stmt);
     $result = mysqli_stmt_get_result($stmt);
 
@@ -19,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Login sukses
         $_SESSION['admin_id'] = $admin['id'];
         $_SESSION['admin_username'] = $admin['username'];
-        header('Location: index.html');
+        header('Location: index.php');
         exit;
     } else {
         $error = 'Username/Email atau Password salah!';
@@ -28,7 +31,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     mysqli_stmt_close($stmt);
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
