@@ -1,18 +1,12 @@
-\<?php
-// 1. SERTAKAN FILE KONEKSI DATABASE ANDA
-// Pastikan file 'config.php' berisi variabel $connect
+<?php
 require_once 'config.php';
 
-// 2. SIAPKAN VARIABEL DEFAULT
-// Ini untuk mencegah error jika halaman diakses tanpa ID atau ID tidak ditemukan
 $judul = "Halaman Tidak Ditemukan";
-$photo = "default.jpg"; // Sediakan gambar 'default.jpg' di folder 'assets/images/img/'
-$uraian = "Maaf, konten yang Anda cari tidak tersedia. Silakan kembali ke beranda.";
+$photo = "default.jpg";
+$uraian = "Maaf, konten yang Anda cari tidak tersedia.";
 
-// 3. Ambil id dari URL atau gunakan default 1
 $id = isset($_GET['id']) ? (int)$_GET['id'] : 1;
 
-// 4. PREPARED STATEMENT untuk ambil konten berdasarkan id
 $stmt = mysqli_prepare($connect, "SELECT judul, photo, uraian_lengkap FROM uraian WHERE id_uraian = ?");
 if ($stmt) {
     mysqli_stmt_bind_param($stmt, "i", $id);
@@ -20,65 +14,107 @@ if ($stmt) {
     $hasil = mysqli_stmt_get_result($stmt);
     if ($data = mysqli_fetch_assoc($hasil)) {
         $judul = $data['judul'];
-        $photo = $data['photo'] ?: $photo; // fallback ke default jika kosong
+        $photo = $data['photo'] ?: $photo;
         $uraian = $data['uraian_lengkap'];
     }
     mysqli_stmt_close($stmt);
 }
-// Kita tidak perlu menutup koneksi ($connect) di sini
+
+// 💡 Bersihkan background dan atribut bawaan Word/Excel
+$uraian_clean = preg_replace(
+  [
+    '/background(-color)?:\s*[^;"]+;?/i',
+    '/bgcolor="[^"]*"/i',
+    '/style="[^"]*background[^"]*"/i',
+    '/color:\s*#[0-9a-fA-F]{3,6};?/i',
+    '/font-family:[^;"]+;?/i',
+    '/border[^:]*:[^;"]*;?/i'
+  ],
+  '',
+  $uraian
+);
 ?>
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Kecamatan Tinanggea</title>
 
-  <head>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-woox-travel.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <style>
+    /* ✅ Styling tabel agar rapi dan putih bersih */
+    .uraian-content table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      margin: 20px 0;
+      font-size: 16px;
+      border: 1px solid #dee2e6;
+    }
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    .uraian-content th, .uraian-content td {
+      border: 1px solid #dee2e6;
+      padding: 10px 12px;
+      text-align: center;
+      vertical-align: middle;
+      color: #333;
+    }
 
-    <title>Kecamatan Tinanggea</title>
+    .uraian-content th {
+      background-color: #f8f9fa;
+      font-weight: 600;
+    }
 
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    .uraian-content tr:nth-child(even) {
+      background-color: #fdfdfd;
+    }
 
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-woox-travel.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-  </head>
+    .uraian-content tr:hover {
+      background-color: #f1f1f1;
+      transition: 0.2s ease;
+    }
+  </style>
+</head>
 
 <body>
-
   <header class="header-area header-sticky">
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <a href="index.php" class="logo">
-                        Kecamatan Tinanggea
-                    </a>
-                    <ul class="nav">
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="page_id.php?id=4">Topografi</a></li>
-                        <li><a href="page_id.php?id=5">Batas Wilayah</a></li>
-                        <li><a href="page_id.php?id=6">Pertumbuhan penduduk</a></li>
-                        <li><a href="reservation.php">Contact</a></li>
-                    </ul>  
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    </nav>
-            </div>
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <a href="index.php" class="logo">Kecamatan Tinanggea</a>
+              <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+                  <li><a id="1" href="index.php" class="active">Home</a></li>
+                  <li><a id="4" href="page_id.php?id=4">Topografi</a></li>
+                  <li><a id="5" href="page_id.php?id=5">Batas Wilayah</a></li>
+                  <li><a id="6" href="page_id.php?id=6">Pertumbuhan penduduk</a></li>
+                  <li><a href="reservation.php">Contact</a></li>
+                  <li><a href="dashboard/register.php">admin</a></li>
+              </ul>   
+              <a class='menu-trigger'>
+                  <span>Menu</span>
+              </a>
+                    <!-- ***** Menu End ***** -->
+          </nav>
         </div>
-    </div>  
+      </div>
+    </div>
   </header>
+
   <div class="page-heading">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h2><?php echo htmlspecialchars($judul); ?></h2>
+          <h2><?= htmlspecialchars($judul); ?></h2>
         </div>
       </div>
     </div>
@@ -89,38 +125,38 @@ if ($stmt) {
       <div class="row">
         <div class="col-lg-6">
           <div class="left-image">
-            <img src="assets/images/img/<?php echo htmlspecialchars($photo); ?>" alt="<?php echo htmlspecialchars($judul); ?>">
+            <img src="assets/images/img/<?= htmlspecialchars($photo); ?>" 
+                 alt="<?= htmlspecialchars($judul); ?>" 
+                 style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px;">
           </div>
         </div>
+
         <div class="col-lg-6">
-          <div class="right-content">
-            <h4><?php echo htmlspecialchars($judul); ?></h4>
-            <p><?php echo $uraian; ?></p>
-            <div class="main-button">
-              <a href="index.php">Kembali ke Beranda</a>
+          <div class="right-content" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <h4 style="color: #333; font-weight: 600; margin-bottom: 20px;"><?= htmlspecialchars($judul); ?></h4>
+
+            <!-- ✅ Hasil konten bersih dari DB -->
+            <div class="uraian-content">
+              <?= $uraian_clean; ?>
+            </div>
+
+            <div class="main-button" style="margin-top: 30px;">
+              <a href="index.php" style="background: #007bff; color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; display: inline-block;">Kembali ke Beranda</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="call-to-action">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <h2>Hubungi Kami</h2>
-        </div>
-        <div class="col-lg-4">
-          <div class="border-button">
-            <a href="reservation.html">Kontak</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <footer>
+  <footer style="background: #333; color: white; padding: 30px 0; margin-top: 40px;">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p>Â© 2025 Kecamatan Tinanggea
+          <p style="margin: 0; text-align: center;">© 2025 Kecamatan Tinanggea. Dikembangkan oleh Tim Web Tinanggea.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
