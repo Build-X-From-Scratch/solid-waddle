@@ -854,24 +854,43 @@ Banner Style
   top: 40%;
   transform: translateY(-50%);
 }
+/* Overlay tetap dipakai */
+#section-1 .content-slider .slider .banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25); /* sedikit lebih terang supaya teks putih tetap kontras */
+  z-index: 1;
+}
+
+/* Posisi teks di atas overlay */
+#section-1 .content-slider .slider .banner .banner-inner-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+/* Subjudul */
 #section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {
   font-weight: 500;
   font-size: 20px;
-  background: linear-gradient(90deg, #1E3A8A, #3B82F6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25); /* bayangan lembut */
   margin-bottom: 20px;
 }
+
+/* Judul utama */
 #section-1 .content-slider .slider .banner .banner-inner-wrapper h1 {
   font-size: 50px;
-  background: linear-gradient(90deg, #1E3A8A, #3B82F6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
   font-weight: 700;
+  color: #fff;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* blur lembut, bukan garis */
   margin-bottom: 30px;
+  letter-spacing: 1px; /* sedikit jarak antar huruf biar elegan */
 }
+
 #section-1 .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a:hover {
   color: #22b3c1;
   border-color: #22b3c1;
@@ -1904,7 +1923,7 @@ Deals Page Style
 */
 
 .page-heading {
-  background-image: url(../images/heading-bg.jpg);
+  background-image: url(../images/img/DJI_0112.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
