@@ -64,7 +64,22 @@ $result_pesan = mysqli_query($connect, $query_pesan);
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Data Management:</h6>
                         <a class="collapse-item" href="tables.php">Daftar Tamu</a>
-                        <a class="collapse-item" href="messages.php">Daftar Pesan</a>
+                        <a class="collapse-item" href="pesan.php">Daftar Pesan</a>
+                    </div>
+                </div>
+            </li>
+            <!-- Admin Section -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAdmin">
+                    <i class="fas fa-fw fa-cogs"></i>
+                    <span>Admin</span>
+                </a>
+                <div id="collapseAdmin" class="collapse" aria-labelledby="headingAdmin" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Admin Menu:</h6>
+                        <a class="collapse-item" href="uraian.php">Uraian</a>
+                        <a class="collapse-item" href="admin.php">Admin</a>
+                        <a class="collapse-item" href="tamu.php">Tamu</a>
                     </div>
                 </div>
             </li>
