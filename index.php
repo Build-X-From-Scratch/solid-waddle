@@ -88,7 +88,7 @@ https://templatemo.com/tm-580-woox-travel
           <div class="banner-inner-wrapper header-text">
             <div class="main-caption">
             <h2>Selamat Datang di:</h2>
-            <h1 class="judul-kecamatan">Kecamatan Tinanggea</h1>
+            <h1>Kecamatan Tinanggea</h1>
               <div class="border-button"><a href="reservation.php">Go There</a></div>
             </div>
             <div class="container">
@@ -98,11 +98,11 @@ https://templatemo.com/tm-580-woox-travel
                     <div class="row">
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-users"></i>
-                        <h4><span>Jumlah Penduduk:</span><br>± 32.000 Jiwa</h4>
+                        <h4><span>Jumlah Penduduk:</span><br>± 24.168 Jiwa</h4>
                       </div>
-                      <div class="col-lg-3 col-sm-6 col-6">
+                      <div class="col-lg-3 col-sm-6 col-6"> 
                         <i class="fa fa-map"></i>
-                        <h4><span>Luas Wilayah:</span><br>525 KM<em>2</em></h4>
+                        <h4><span>Luas Wilayah:</span><br>362,88 KM<em>2</em></h4>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-leaf"></i>
@@ -110,7 +110,7 @@ https://templatemo.com/tm-580-woox-travel
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <div class="main-button">
-                          <a href="about.php">Pelajari Lebih Lanjut</a>
+                          <a href="index.php">Pelajari Lebih Lanjut</a>
                         </div>
                       </div>
                     </div>
@@ -125,7 +125,7 @@ https://templatemo.com/tm-580-woox-travel
             <div class="main-caption">
             <h2>Selamat Datang di:</h2>
             <h1>Kecamatan Tinanggea</h1>
-              <div class="border-button"><a href="about.html">Go There</a></div>
+              <div class="border-button"><a href="index.php">Go There</a></div>
             </div>
             <div class="container">
               <div class="row">
@@ -146,7 +146,7 @@ https://templatemo.com/tm-580-woox-travel
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <div class="main-button">
-                          <a href="about.html">Pelajari Lebih Lanjut</a>
+                          <a href="index.php">Pelajari Lebih Lanjut</a>
                         </div>
                       </div>
                     </div>
@@ -161,7 +161,7 @@ https://templatemo.com/tm-580-woox-travel
             <div class="main-caption">
             <h2>Selamat Datang di:</h2>
             <h1>Kecamatan Tinanggea</h1>
-              <div class="border-button"><a href="about.html">Go There</a></div>
+              <div class="border-button"><a href="index.php">Go There</a></div>
             </div>
             <div class="container">
               <div class="row">
@@ -182,7 +182,7 @@ https://templatemo.com/tm-580-woox-travel
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <div class="main-button">
-                          <a href="about.html">Pelajari Lebih Lanjut</a>
+                          <a href="index.php">Pelajari Lebih Lanjut</a>
                         </div>
                       </div>
                     </div>
@@ -197,7 +197,7 @@ https://templatemo.com/tm-580-woox-travel
             <div class="main-caption">
             <h2>Selamat Datang di:</h2>
             <h1>Kecamatan Tinanggea</h1>
-              <div class="border-button"><a href="about.html">Go There</a></div>
+              <div class="border-button"><a href="index.php">Go There</a></div>
             </div>
             <div class="container">
               <div class="row">
@@ -218,7 +218,7 @@ https://templatemo.com/tm-580-woox-travel
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <div class="main-button">
-                          <a href="about.html">Pelajari Lebih Lanjut</a>
+                          <a href="index.php">Pelajari Lebih Lanjut</a>
                         </div>
                       </div>
                     </div>
@@ -239,6 +239,8 @@ https://templatemo.com/tm-580-woox-travel
       </nav>
     </div>
   </section>
+  <!-- ***** Main Banner Area End ***** -->
+  
   <!-- ***** Main Banner Area End ***** -->
   
   <div class="visit-country">
@@ -371,9 +373,8 @@ https://templatemo.com/tm-580-woox-travel
     </div>
   </div>
 
-
 <!-- start -->
-  <div class="cities-town">
+<div class="cities-town">
     <div class="container">
       <div class="row">
         <div class="slider-content">
@@ -481,6 +482,7 @@ https://templatemo.com/tm-580-woox-travel
       </div>
     </div>
   </div>
+  
   <!-- end -->
   <div class="call-to-action">
   <div class="container">
@@ -491,7 +493,7 @@ https://templatemo.com/tm-580-woox-travel
       </div>
       <div class="col-lg-4">
         <div class="border-button">
-          <a href="about.html">Pelajari Lebih Lanjut</a>
+          <a href="index.php">Pelajari Lebih Lanjut</a>
         </div>
       </div>
     </div>
@@ -508,6 +510,7 @@ https://templatemo.com/tm-580-woox-travel
     </div>
   </div>
 </footer>
+
 
 
   <!-- Scripts -->
