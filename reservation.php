@@ -189,16 +189,33 @@ https://templatemo.com/tm-580-woox-travel
     </div>
   </div>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright © 2036 <a href="#">WoOx Travel</a> Company. All rights reserved. 
-          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a></p>
+ <!-- end -->
+  <div class="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <h2>Kenali Lebih Dekat Kecamatan Tinanggea</h2>
+        <h4>Temukan potensi, budaya, dan keindahan alamnya!</h4>
+      </div>
+      <div class="col-lg-4">
+        <div class="border-button">
+          <a href="index.php">Pelajari Lebih Lanjut</a>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <p>© 2025 Kecamatan Tinanggea. Dikembangkan oleh Tim Web Tinanggea.
+        <br>Template by <a href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
 
 
   <!-- Scripts -->
