@@ -363,12 +363,17 @@ Header Style
   -moz-transition: all .5s ease 0s;
   -o-transition: all .5s ease 0s;
   transition: all .5s ease 0s;
+  overflow: visible;
 }
 
 .header-area .main-nav {
   background: transparent;
   display: flex;
-  padding: 0px 10px 0px 30px; /* tighter right padding so Contact is near edge */
+  padding: 0px 5px 0px 30px; /* tighter right padding so Contact is near edge */
+  align-items: center;
+  justify-content: space-between;
+  min-width: 0;
+  flex: 1;
 }
 
 .background-header .main-nav {
@@ -413,17 +418,28 @@ Header Style
   transition: all 0.3s ease 0s;
   position: relative;
   z-index: 999;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: auto;
+  max-width: none;
+  overflow: visible;
+  min-width: 0;
+  flex-shrink: 0;
 }
 
 .header-area .main-nav .nav li {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  display: inline-block;
 }
 
 .header-area .main-nav .nav li a {
   display: block;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 13px;
   text-transform: capitalize;
   color: #fff;
   -webkit-transition: all 0.3s ease 0s;
@@ -431,10 +447,13 @@ Header Style
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   border: transparent;
-  padding: 8px 15px;
+  padding: 6px 10px;
   position: relative;
   border-radius: 18px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .header-area .main-nav .nav li.has-sub ul.sub-menu li:last-child a:hover,

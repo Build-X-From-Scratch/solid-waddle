@@ -102,13 +102,14 @@ $uraian_clean = preg_replace(
                     <nav class="main-nav">
                         <a href="index.php" class="logo">Kecamatan Tinanggea</a>
                         <ul class="nav">
-                            <li><a href="index.php">Home</a></li>
-                            <li><a href="page_id.php?id=4">Topografi</a></li>
-                            <li><a href="page_id.php?id=5">Batas Wilayah</a></li>
-                            <li><a href="page_id.php?id=6">Pertumbuhan Penduduk</a></li>
-                            <li><a href="reservation.php">Contact</a></li>
-                            <li><a href="dashboard/register.php">Admin</a></li>
-                        </ul>
+                        <li><a id="1" href="index.php" class="active">Home</a></li>
+                        <li><a id="4" href="page_id.php?id=4">Topografi</a></li>
+                        <li><a id="5" href="page_id.php?id=5">Batas Wilayah</a></li>
+                        <li><a id="6" href="page_id.php?id=6">Pertumbuhan penduduk</a></li>
+                        <li><a href="reservation.php">Contact</a></li>
+                        <li><a href="dashboard/register.php">admin</a></li>
+                        <li><a href="out_teams.php">team</a></li>
+                        </ul>   
                         <a class='menu-trigger'><span>Menu</span></a>
                     </nav>
                 </div>

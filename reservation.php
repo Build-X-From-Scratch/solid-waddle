@@ -64,7 +64,8 @@ https://templatemo.com/tm-580-woox-travel
                         <li><a id="6" href="page_id.php?id=6">Pertumbuhan penduduk</a></li>
                         <li><a href="reservation.php">Contact</a></li>
                         <li><a href="dashboard/register.php">admin</a></li>
-                    </ul>     
+                        <li><a href="out_teams.php">team</a></li>
+                    </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
