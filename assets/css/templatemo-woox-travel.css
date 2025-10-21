@@ -1143,14 +1143,31 @@ Call To Action Style
 --------------------------------------------- 
 */
 
-.call-to-action {
+/* .call-to-action {
   margin-top: 120px;
+  padding: 75px 0px;
+  position: relative; /* enable full-bleed background without taking element out of flow */
+/* } */
+
+/* Full-bleed background that spans edge-to-edge without affecting layout */
+/* .call-to-action::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
   background-image: url(../images/cta-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 75px 0px;
-}
+  z-index: 0;
+} */
+
+/* .call-to-action > * { position: relative; z-index: 1; }
 
 .call-to-action h2 {
   font-size: 40px;
@@ -1179,37 +1196,54 @@ Call To Action Style
 .call-to-action .border-button a:hover {
   background-color: #fff;
   color: #22b3c1;
-}
+} */
 
 
 /* 
 ---------------------------------------------
 Footer Style
 --------------------------------------------- 
-*/
+/* */
 
-footer {
-  background-color: #22b3c1;
+/* footer {
   text-align: center;
-  padding: 25px 0px;
-}
+  padding: 30px 0px !important;
+  margin-top: 40px !important;
+  position: relative; /* for full-bleed background */
+/* }
+
+footer::before {
+  content: '';
+  position: absolute; */
+  /* top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  background-color: #333; /* footer background */
+  /* z-index: 0;
+} */
+
+/* footer > * { position: relative; z-index: 1; }
 
 footer p {
-  color: #fff;
+  color: #fff !important;
+  margin: 0 !important;
+  font-size: 14px !important;
 }
 
 footer p a {
-  color: #fff;
+  color: #17a2b8 !important;
   font-weight: 500;
   transition: all .3s;
 }
 
 footer p a:hover {
-  color: #fff;
+  color: #17a2b8 !important;
   opacity: 0.75;
-}
-
-
+}   */
 
 /* 
 ---------------------------------------------
@@ -2482,4 +2516,90 @@ body {
     /* Padding lebih kecil */
     padding: 8px 15px;
   }
+}
+
+/* === PASTIKAN HTML & BODY TIDAK MEMBATASI === */
+/* html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+} */
+
+
+/* 
+---------------------------------------------
+Call To Action Style
+--------------------------------------------- 
+*/
+
+.call-to-action {
+  margin-top: 120px;
+  background-image: url(../images/cta-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 75px 0px;
+}
+
+.call-to-action h2 {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.call-to-action h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.call-to-action .border-button {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.call-to-action .border-button a {
+  color: #fff;
+  border-color: #fff
+}
+
+.call-to-action .border-button a:hover {
+  background-color: #fff;
+  color: #22b3c1;
+}
+
+
+/* 
+---------------------------------------------
+Footer Style
+--------------------------------------------- 
+*/
+
+footer {
+  background-color: #22b3c1;
+  text-align: center;
+  padding: 25px 0px;
+}
+
+footer p {
+  color: #fff;
+}
+
+footer p a {
+  color: #fff;
+  font-weight: 500;
+  transition: all .3s;
+}
+
+footer p a:hover {
+  color: #fff;
+  opacity: 0.75;
 }
