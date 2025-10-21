@@ -278,7 +278,7 @@ https://templatemo.com/tm-580-woox-travel
                         <h4><?php echo strip_tags($judul, '<sup><sub><strong><em><b><i><br>'); ?></h4>
                         <p><?php echo strip_tags($uraian_singkat, '<sup><sub><strong><em><b><i><br><p><ul><ol><li><a>'); ?></p>
                         <div class="text-button">
-                          <a href="page.php?id=1">Info Selengkapnya</a>
+                          <a href="page_id.php?id=1">Info Selengkapnya</a>
                         </div>
                       </div>
                     </div>
@@ -309,7 +309,7 @@ https://templatemo.com/tm-580-woox-travel
                         <h4><?php echo strip_tags($judul2, '<sup><sub><strong><em><b><i><br>'); ?></h4>
                         <p><?php echo strip_tags($uraian_singkat2, '<sup><sub><strong><em><b><i><br><p><ul><ol><li><a>'); ?></p>
                         <div class="text-button">
-                          <a href="page.php?id=2">Info Selengkapnya</a>
+                          <a href="page_id.php?id=2">Info Selengkapnya</a>
                         </div>
                       </div>
                     </div>
@@ -340,7 +340,7 @@ https://templatemo.com/tm-580-woox-travel
                         <h4><?php echo strip_tags($judul3, '<sup><sub><strong><em><b><i><br>'); ?></h4>
                         <p><?php echo strip_tags($uraian_singkat3, '<sup><sub><strong><em><b><i><br><p><ul><ol><li><a>'); ?></p>
                         <div class="text-button">
-                          <a href="page.php?id=3">Info Selengkapnya</a>
+                          <a href="page_id.php?id=3">Info Selengkapnya</a>
                         </div>
                       </div>
                     </div>
