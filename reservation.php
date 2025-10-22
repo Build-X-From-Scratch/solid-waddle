@@ -95,22 +95,23 @@ https://templatemo.com/tm-580-woox-travel
         <div class="col-lg-4 col-sm-6">
           <div class="info-item">
             <i class="fa fa-phone"></i>
-            <h4>Make a Phone Call</h4>
-            <a href="#">+123 456 789 (0)</a>
+            <h4>Segera Hubungi</h4>
+            <a href="#">+62111222333444</a>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6">
           <div class="info-item">
             <i class="fa fa-envelope"></i>
-            <h4>Contact Us via Email</h4>
-            <a href="#">company@email.com</a>
+            <h4>Email</h4>
+            <a href="#">Tinanggea@gmail.com</a>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6">
           <div class="info-item">
             <i class="fa fa-map-marker"></i>
-            <h4>Visit Our Offices</h4>
-            <a href="#">24th Street North Avenue London, UK</a>
+            <h4>Kantor</h4>
+            <a href="#">Tinanggea, Kec. Tinanggea, Kabupaten Konawe Selatan, Sulawesi Tenggara 93885
+</a>
           </div>
         </div>
       </div>

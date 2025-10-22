@@ -135,11 +135,11 @@ https://templatemo.com/tm-580-woox-travel
                     <div class="row">
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-users"></i>
-                        <h4><span>Jumlah Penduduk:</span><br>± 32.000 Jiwa</h4>
+                        <h4><span>Jumlah Penduduk:</span><br>± 24.168 Jiwa</h4>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-map"></i>
-                        <h4><span>Luas Wilayah:</span><br>525 KM<em>2</em></h4>
+                        <h4><span>Luas Wilayah:</span><br>362,88 KM<em>2</em></h4>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-leaf"></i>
@@ -171,11 +171,11 @@ https://templatemo.com/tm-580-woox-travel
                     <div class="row">
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-users"></i>
-                        <h4><span>Jumlah Penduduk:</span><br>± 32.000 Jiwa</h4>
+                        <h4><span>Jumlah Penduduk:</span><br>± 24.168 Jiwa</h4>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-map"></i>
-                        <h4><span>Luas Wilayah:</span><br>525 KM<em>2</em></h4>
+                        <h4><span>Luas Wilayah:</span><br>362,88 KM<em>2</em></h4>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-leaf"></i>
@@ -207,11 +207,11 @@ https://templatemo.com/tm-580-woox-travel
                     <div class="row">
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-users"></i>
-                        <h4><span>Jumlah Penduduk:</span><br>± 32.000 Jiwa</h4>
+                        <h4><span>Jumlah Penduduk:</span><br>± 24.168 Jiwa</h4>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-map"></i>
-                        <h4><span>Luas Wilayah:</span><br>525 KM<em>2</em></h4>
+                        <h4><span>Luas Wilayah:</span><br>362,88 KM<em>2</em></h4>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-leaf"></i>
@@ -278,7 +278,7 @@ https://templatemo.com/tm-580-woox-travel
                         <h4><?php echo strip_tags($judul, '<sup><sub><strong><em><b><i><br>'); ?></h4>
                         <p><?php echo strip_tags($uraian_singkat, '<sup><sub><strong><em><b><i><br><p><ul><ol><li><a>'); ?></p>
                         <div class="text-button">
-                          <a href="page.php?id=1">Info Selengkapnya</a>
+                          <a href="page_id.php?id=1">Info Selengkapnya</a>
                         </div>
                       </div>
                     </div>
@@ -309,7 +309,7 @@ https://templatemo.com/tm-580-woox-travel
                         <h4><?php echo strip_tags($judul2, '<sup><sub><strong><em><b><i><br>'); ?></h4>
                         <p><?php echo strip_tags($uraian_singkat2, '<sup><sub><strong><em><b><i><br><p><ul><ol><li><a>'); ?></p>
                         <div class="text-button">
-                          <a href="page.php?id=2">Info Selengkapnya</a>
+                          <a href="page_id.php?id=2">Info Selengkapnya</a>
                         </div>
                       </div>
                     </div>
@@ -340,7 +340,7 @@ https://templatemo.com/tm-580-woox-travel
                         <h4><?php echo strip_tags($judul3, '<sup><sub><strong><em><b><i><br>'); ?></h4>
                         <p><?php echo strip_tags($uraian_singkat3, '<sup><sub><strong><em><b><i><br><p><ul><ol><li><a>'); ?></p>
                         <div class="text-button">
-                          <a href="page.php?id=3">Info Selengkapnya</a>
+                          <a href="page_id.php?id=3">Info Selengkapnya</a>
                         </div>
                       </div>
                     </div>

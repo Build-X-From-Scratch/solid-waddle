@@ -34,8 +34,10 @@
         }
         .team-section .card-img-top {
             border-radius: 10px 10px 0 0;
-            height: 150px;
-            object-fit: cover;
+            height: 190px; /* uniform box height */
+            object-fit: contain; /* show entire photo without cropping */
+            background-color: #f8f9fa; /* neutral background for letterbox area */
+            padding: 8px; /* breathing room around image */
         }
         .team-section .card-body {
             padding: 15px;
@@ -73,7 +75,8 @@
                         <li><a id="5" href="page_id.php?id=5">Batas Wilayah</a></li>
                         <li><a id="6" href="page_id.php?id=6">Pertumbuhan penduduk</a></li>
                         <li><a href="reservation.php">Contact</a></li>
-                        <li><a href="dashboard/register.php">Admin</a></li>
+                        <li><a href="dashboard/register.php">admin</a></li>
+                        <li><a href="out_teams.php">team</a></li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -102,7 +105,7 @@
           <div class="row justify-content-center team-leader">
               <div class="col-md-3 col-sm-6">
                   <div class="card text-center">
-                      <img src="https://via.placeholder.com/150" class="card-img-top" alt="Ketua Kelompok">
+                      <img src="our_teams/image.png" class="card-img-top" alt="Ketua Kelompok">
                       <div class="card-body">
                           <h5 class="card-title">Muh Yusuf</h5>
                           <p class="card-text">Ketua Kelompok</p>
@@ -125,7 +128,7 @@
                   <div class="card text-center">
                       <img src="our_teams/arya.png" class="card-img-top" alt="Anggota 2">
                       <div class="card-body">
-                          <h5 class="card-title">Arriya Rahaldi Al Kandari</h5>
+                          <h5 class="card-title">Dr.prof.Arriya.phd </h5>
                           <p class="card-text">Anggota </p>
                       </div>
                   </div>
@@ -153,7 +156,7 @@
               </div>
               <div class="col-md-4 col-sm-6 mb-4">
                   <div class="card text-center">
-                      <img src="https://via.placeholder.com/150" class="card-img-top" alt="Anggota 5">
+                      <img src="our_teams/alvin.png" class="card-img-top" alt="Anggota 5">
                       <div class="card-body">
                           <h5 class="card-title">Alvin</h5>
                           <p class="card-text">Anggota </p>
@@ -162,7 +165,7 @@
               </div>
               <div class="col-md-4 col-sm-6 mb-4">
                   <div class="card text-center">
-                      <img src="https://via.placeholder.com/150" class="card-img-top" alt="Anggota 6">
+                      <img src="our_teams/dzaky.png" class="card-img-top" alt="Anggota 6">
                       <div class="card-body">
                           <h5 class="card-title">Dzaky</h5>
                           <p class="card-text">Anggota </p>
@@ -176,16 +179,33 @@
   <!-- ============================ -->
   <!--        FOOTER AREA          -->
   <!-- ============================ -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>© 2025 Kecamatan Tinanggea. Dikembangkan oleh Tim Web Tinanggea.
-          <br>Template by <a href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+  <!-- end -->
+  <div class="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <h2>Kenali Lebih Dekat Kecamatan Tinanggea</h2>
+        <h4>Temukan potensi, budaya, dan keindahan alamnya!</h4>
+      </div>
+      <div class="col-lg-4">
+        <div class="border-button">
+          <a href="index.php">Pelajari Lebih Lanjut</a>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <p>© 2025 Kecamatan Tinanggea. Dikembangkan oleh Tim Web Tinanggea.
+        <br>Template by <a href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
 
   <!-- Scripts -->
   <script src="vendor/jquery/jquery.min.js"></script>

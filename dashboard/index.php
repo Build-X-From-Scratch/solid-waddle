@@ -108,7 +108,7 @@ $result_pesan = mysqli_query($connect, $query_pesan);
                                 <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in">
-                                <a class="dropdown-item" href="logout.php">
+                                <a class="dropdown-item" href="login.php">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw text-gray-400 mr-2"></i> Logout
                                 </a>
                             </div>
@@ -121,7 +121,7 @@ $result_pesan = mysqli_query($connect, $query_pesan);
                 <div class="container-fluid">
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Dashboard Kecamatan Tinanggea</h1>
-                        <a href="logout.php" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm">
+                        <a href="login.php" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm">
                             <i class="fas fa-sign-out-alt fa-sm text-white-50"></i> Logout
                         </a>
                     </div>
