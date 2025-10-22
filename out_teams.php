@@ -128,7 +128,7 @@
                   <div class="card text-center">
                       <img src="our_teams/arya.png" class="card-img-top" alt="Anggota 2">
                       <div class="card-body">
-                          <h5 class="card-title">Arriya Rahaldi Al Kandari</h5>
+                          <h5 class="card-title">Dr.prof.Arriya.phd </h5>
                           <p class="card-text">Anggota </p>
                       </div>
                   </div>

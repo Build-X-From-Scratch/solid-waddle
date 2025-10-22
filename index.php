@@ -135,11 +135,11 @@ https://templatemo.com/tm-580-woox-travel
                     <div class="row">
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-users"></i>
-                        <h4><span>Jumlah Penduduk:</span><br>± 32.000 Jiwa</h4>
+                        <h4><span>Jumlah Penduduk:</span><br>± 24.168 Jiwa</h4>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-map"></i>
-                        <h4><span>Luas Wilayah:</span><br>525 KM<em>2</em></h4>
+                        <h4><span>Luas Wilayah:</span><br>362,88 KM<em>2</em></h4>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-leaf"></i>
@@ -171,11 +171,11 @@ https://templatemo.com/tm-580-woox-travel
                     <div class="row">
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-users"></i>
-                        <h4><span>Jumlah Penduduk:</span><br>± 32.000 Jiwa</h4>
+                        <h4><span>Jumlah Penduduk:</span><br>± 24.168 Jiwa</h4>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-map"></i>
-                        <h4><span>Luas Wilayah:</span><br>525 KM<em>2</em></h4>
+                        <h4><span>Luas Wilayah:</span><br>362,88 KM<em>2</em></h4>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-leaf"></i>
@@ -207,11 +207,11 @@ https://templatemo.com/tm-580-woox-travel
                     <div class="row">
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-users"></i>
-                        <h4><span>Jumlah Penduduk:</span><br>± 32.000 Jiwa</h4>
+                        <h4><span>Jumlah Penduduk:</span><br>± 24.168 Jiwa</h4>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-map"></i>
-                        <h4><span>Luas Wilayah:</span><br>525 KM<em>2</em></h4>
+                        <h4><span>Luas Wilayah:</span><br>362,88 KM<em>2</em></h4>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-leaf"></i>
